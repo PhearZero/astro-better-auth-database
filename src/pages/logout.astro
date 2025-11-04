@@ -1,0 +1,9 @@
+---
+import { auth } from "../auth-astro";
+
+await auth.api.signOut({
+	headers: Astro.request.headers,
+});
+
+return Astro.redirect("/");
+---

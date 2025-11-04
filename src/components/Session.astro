@@ -1,0 +1,10 @@
+---
+---
+
+<h3>Session Information</h3>
+{Astro.locals.session && (
+<div>
+    <p><strong>Session ID:</strong> {Astro.locals.session.id}</p>
+    <p><strong>Expires:</strong> {new Date(Astro.locals.session.expiresAt).toLocaleString()}</p>
+</div>
+    ) || <p>No session information available</p>}

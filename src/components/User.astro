@@ -1,0 +1,12 @@
+---
+---
+
+{Astro.locals.user ? (
+<div>
+    <p><strong>User ID:</strong> {Astro.locals.user.id}</p>
+    <p><strong>Email:</strong> {Astro.locals.user.email}</p>
+    <p><strong>Created At:</strong> {new Date(Astro.locals.user.createdAt).toLocaleString()}</p>
+</div>
+    ) : (
+<p>No user information available</p>
+    )}
